@@ -1,24 +1,23 @@
-# README
+# rails-api-auth-example
+> Example token authentication for Rails 5 API with devise-token-auth
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+[Companion Tutorial](https://www.valentinog.com/blog/) Coming soon...
 
-Things you may want to cover:
+## Development
 
-* Ruby version
+To start the application in development:
 
-* System dependencies
+`git clone git@github.com:valentinogagliardi/rails-api-auth-example`
 
-* Configuration
+`cd rails-api-auth-example`
 
-* Database creation
+`bundle install`
 
-* Database initialization
+`rails db:migrate`
 
-* How to run the test suite
+`rails server`
 
-* Services (job queues, cache servers, search engines, etc.)
+## Meta
 
-* Deployment instructions
+Valentino Gagliardi - [valentinog.com](https://www.valentinog.com) - valentino@valentinog.com
 
-* ...
