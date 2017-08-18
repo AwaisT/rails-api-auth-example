@@ -1,0 +1,166 @@
+{
+	"variables": [],
+	"info": {
+		"name": "rails-api-auth-example",
+		"_postman_id": "d49bb885-8a6b-5af5-cd92-6b4ff9584585",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "INDEX: List all articles",
+			"request": {
+				"url": "http://localhost:3000/articles",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "CREATE: Sample article",
+			"request": {
+				"url": "http://localhost:3000/articles",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "access-token",
+						"value": "G2YQG_jfHHp9j-k0D2kj2w",
+						"description": ""
+					},
+					{
+						"key": "client",
+						"value": "g8JSCObdq7iObJDJyvMZbg",
+						"description": ""
+					},
+					{
+						"key": "expiry",
+						"value": "1504270146",
+						"description": ""
+					},
+					{
+						"key": "uid",
+						"value": "valentino@valentinog.com",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\": \"Adding authentication to a Rails API with Devise Token Auth\",\n    \"body\": \"Adding authentication to a Rails API with Devise Token Auth\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "CREATE: New user",
+			"request": {
+				"url": "http://localhost:3000/auth",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"email\": \"valentino@valentinog.com\", \"password\": \"changeme\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "CREATE: Sign In",
+			"request": {
+				"url": "http://localhost:3000/auth/sign_in",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"email\": \"valentino@valentinog.com\", \"password\": \"changeme\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "DESTROY: Remove the sample article",
+			"request": {
+				"url": "http://localhost:3000/articles/1",
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "access-token",
+						"value": "JuDzkopq6Z2I7wcpUIttGA",
+						"description": ""
+					},
+					{
+						"key": "client",
+						"value": "g8JSCObdq7iObJDJyvMZbg",
+						"description": ""
+					},
+					{
+						"key": "expiry",
+						"value": "1504270086",
+						"description": ""
+					},
+					{
+						"key": "uid",
+						"value": "valentino@valentinog.com",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "DESTROY: Sign Out",
+			"request": {
+				"url": "http://localhost:3000/auth/sign_out",
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "access-token",
+						"value": "SznLDIVKQfIlwM1KHUZJ9Q",
+						"description": ""
+					},
+					{
+						"key": "client",
+						"value": "g8JSCObdq7iObJDJyvMZbg",
+						"description": ""
+					},
+					{
+						"key": "expiry",
+						"value": "1504270219",
+						"description": ""
+					},
+					{
+						"key": "uid",
+						"value": "valentino@valentinog.com",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
