@@ -13,4 +13,10 @@ class ArticlesController < ApplicationController
             )
         render json: { article: article }
     end
+
+    def destroy
+        article = Article.find(params[:id])
+        article.destroy
+        render json: { article: article }
+    end
 end
