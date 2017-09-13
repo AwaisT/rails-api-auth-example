@@ -1,7 +1,9 @@
 # rails-api-auth-example
 > Example token authentication for Rails 5 API with devise-token-auth
 
-[Companion Tutorial](https://www.valentinog.com/blog/) Coming soon...
+[![Software License](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat)](LICENSE)
+
+Companion repo for [Adding Token Based Authentication To a Rails API with Devise Token Auth](https://www.valentinog.com/blog/devise-token-auth-rails-api/)
 
 ## Development
 
